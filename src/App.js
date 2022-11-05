@@ -25,13 +25,13 @@ function App(props) {
         <Navbar />
 
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/users/add" component={AddUser} />
-          <Route exact path="/users/edit/:id" component={EditUser} />
-          <Route exact path="/users/:id" component={User} />
-          <Route component={NotFound} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/users/add" element={<AddUser />} />
+          <Route exact path="/users/edit/:id" element={<EditUser />} />
+          <Route exact path="/users/:id" element={<User />} />
+          <Route element={NotFound} />
         </Routes>
       </div>
     </Router>
