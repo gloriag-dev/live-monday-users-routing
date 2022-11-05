@@ -31,7 +31,7 @@ function App(props) {
           <Route exact path="/users/add" element={<AddUser />} />
           <Route exact path="/users/edit/:id" element={<EditUser />} />
           <Route exact path="/users/:id" element={<User />} />
-          <Route element={NotFound} />
+          <Route element={<NotFound />} />
         </Routes>
       </div>
     </Router>
